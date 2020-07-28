@@ -1,0 +1,8 @@
+from urllib import request 
+
+resp = request.urlopen("https://xkcd.com/353/")
+
+print("result code: " + str(resp.getcode()))
+
+data = resp.read()
+print(data)
